@@ -1,0 +1,34 @@
+.right .blog{
+    width:100%;
+    padding: 50px 50px;
+
+}
+.blog h3{
+    text-align:center
+}
+.blog .time{
+    text-align: center;
+    color:gold
+}
+.blog h3{
+    text-align:center
+}
+.blog .time{
+    text-align: center;
+    color:gold;
+    padding: 10px ;
+}
+.blog .text{
+    text-indent: 2em;
+}
+.blog a{
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    
+}
+.blog a:hover{
+    color:rgb(140, 0, 255);
+    transition:all 0.5s;
+}

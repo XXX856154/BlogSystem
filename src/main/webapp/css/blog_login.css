@@ -1,0 +1,59 @@
+.login-container{
+    width:100%;
+    height:calc(100% - 50px);
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+.login-container .dialog{
+    width:400px;
+    height: 300px;
+    border-radius: 30px;
+    background-color: rgb(245, 222, 179,0.8);
+  
+}
+.dialog h3{
+    padding:auto;
+    text-align: center;
+    line-height:50px;
+}
+.dialog .user,.password{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+.dialog .button{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.dialog button{
+    
+    background-color: green;
+    border-radius: 10px;
+    width:100px;
+    height: 50px;
+    border:none;
+    
+}
+.dialog button:hover{
+    background-color: red;
+    transition:all 0.5s;
+}
+.dialog span{
+    display: block;
+    width:100px;
+    font-weight: 700;
+}
+#userinput,#passwordinput{
+    width:150px;
+    height:30px;
+    font-size: 20px;
+    border-radius: 10px;
+    border:none;
+    outline:none;
+    padding-left:10px;
+}

@@ -1,0 +1,30 @@
+.blog_edit_container{
+    width:80%;
+    height:calc(100% - 50px);
+    margin:auto;
+}
+.blog_edit_container input{
+    width:80%;
+    height:30px;
+    margin:20px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    padding-left:10px;
+    font-size:20px;
+    
+}
+.blog_edit_container button{
+   width:100px;
+   background-color: wheat;
+   border:none;
+   border-radius:10px;
+}
+.blog_edit_container button:hover{
+    background-color: yellow;
+    transition:all 0.5s;
+}
+.blog_edit_container #editor{
+    opacity:80%;
+    background-color: wheat;
+}

@@ -10,9 +10,7 @@
     text-align: center;
     color:gold
 }
-.blog h3{
-    text-align:center
-}
+
 .blog .time{
     text-align: center;
     color:gold;
@@ -32,3 +30,10 @@
     color:rgb(140, 0, 255);
     transition:all 0.5s;
 }
+.blog .title
+{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom:5px ;
+} 

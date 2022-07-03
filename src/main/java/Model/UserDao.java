@@ -125,5 +125,38 @@ public class UserDao
   return null;
 
 }
+    public static User selectByName(String userName)
+    {
+        Connection connection=null;
+        String sql="select * from user where userName=?";
+        PreparedStatement preparedStatement=null;
+        ResultSet resultSet=null;
+        List<User> list=new ArrayList<>();
+        try
+        {
+            connection=DBUtils.getConnect();
+            preparedStatement=connection.prepareStatement(sql);
+            preparedStatement.setString(1,userName);
+            resultSet= preparedStatement.executeQuery();
+            if(resultSet.next())
+            {
+                User user=new User();
+                user.setUserId(resultSet.getInt("userId"));
+                user.setUserName(resultSet.getString("userName"));
+                user.setPassword(resultSet.getString("password"));
+                return user;
+            }
 
+        }
+        catch (SQLException sqlException)
+        {
+            sqlException.printStackTrace();
+        }
+        finally
+        {
+            DBUtils.close(connection,preparedStatement,resultSet);
+        }
+        return null;
+
+    }
 }

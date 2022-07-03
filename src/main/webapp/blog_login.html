@@ -20,18 +20,20 @@
          <a href="#">注销</a>
      </div>
      <div class="login-container">
+        <form action="login" method="post">
          <div class="dialog">
              <h3>登录</h3>
              <div class="user">
             <span >用户</span>
-            <input type="text" id="userinput">
+            <input type="text" id="user" name="userName">
         </div>
         <div class="password">
             <span id>密码</span>
-            <input type="password" id="passwordinput">
+            <input type="password" id="password" name="password">
         </div>
-        <div class="button"><button>提交</button></div>
+        <div class="buttonContainer"><input type="submit" value="提交" id="button"></div>
          </div>
+         </form>
      </div>
 
     </body>

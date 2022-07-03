@@ -25,12 +25,12 @@
     
 }
 
-.dialog .button{
+.dialog .buttonContainer{
     display: flex;
     justify-content: center;
     padding: 20px;
 }
-.dialog button{
+.dialog #button{
     
     background-color: green;
     border-radius: 10px;
@@ -38,8 +38,9 @@
     height: 50px;
     border:none;
     
+    
 }
-.dialog button:hover{
+.dialog #button:hover{
     background-color: red;
     transition:all 0.5s;
 }
@@ -48,7 +49,7 @@
     width:50px;
     font-weight: bold;
 }
-#userinput,#passwordinput{
+.dialog #user,#password{
     width:150px;
 
     font-size: 20px;

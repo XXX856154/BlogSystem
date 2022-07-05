@@ -18,6 +18,7 @@
 
 </head>
 <body>
+    <script src="./js/isLogin.js"></script>
      <div class="nav">
          <img src="./image/2.jpg">
          <span>我的博客系统</span>
@@ -27,14 +28,16 @@
          <a href="#">注销</a>
      </div>
      <div class="blog_edit_container">
+        <form action="submitBlog" method="post" style="height:100%"><!-- form表单提交博客内容 -->
         <div class="title">
-        <input type="text">
-        <button>提交</button>
+        <input type="text" name="title" id="title" placeholder="在此处输入标题">
+        <input type="submit" value="发布文章" id="submit">
         </div>
         <div id="editor">
-
+            <!-- 将markdown同步到textarea -->
+            <textarea name="content" style="display:none"></textarea>
         </div>
-       
+    </form>
     </div>
     <script>
         //初始化编辑器
@@ -46,9 +49,12 @@
             //编辑器的初始内容
             markdown:"# 在这里写下一篇博客",
             //指定editor.md的依赖路径
-            path:"editor.md/lib/"
+            path:"editor.md/lib/",
+            //editor.md会自动将内容同步到textarea中
+            saveHTMLToTextarea:true
         
         });
+        isLogin("blog_edit.html");
     </script>
      </body>
 </html>

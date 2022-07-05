@@ -14,7 +14,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 @WebServlet("/login")
-public class loginServlet extends HttpServlet
+public class LoginServlet extends HttpServlet
 {
     private ObjectMapper objectMapper=new ObjectMapper();
     @Override

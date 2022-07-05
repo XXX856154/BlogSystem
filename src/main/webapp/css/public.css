@@ -92,4 +92,10 @@ body{
     display:flex;
     justify-content:space-around;
 }
+.card .counterText{
+    padding:2px 2px;
+    text-align: center;
+    display:flex;
+    justify-content:space-around;
+}
 

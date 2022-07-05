@@ -3,7 +3,7 @@
     height:calc(100% - 50px);
     margin:auto;
 }
-.blog_edit_container input{
+.blog_edit_container #title{
     width:80%;
     height:30px;
     margin:20px;
@@ -11,16 +11,16 @@
     outline:none;
     border-radius:10px;
     padding-left:10px;
-    font-size:20px;
+    font-size:18px;
     
 }
-.blog_edit_container button{
+.blog_edit_container #submit{
    width:100px;
    background-color: wheat;
    border:none;
    border-radius:10px;
 }
-.blog_edit_container button:hover{
+.blog_edit_container #submit:hover{
     background-color: yellow;
     transition:all 0.5s;
 }

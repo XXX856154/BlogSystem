@@ -26,7 +26,7 @@ public class BlogDao
             preparedStatement=connection.prepareStatement(sql);
             preparedStatement.setString(1,blog.getTitle());
             preparedStatement.setString(2,blog.getContent());
-            preparedStatement.setInt(3,blog.getBlogId());
+            preparedStatement.setInt(3,blog.getUserId());
             preparedStatement.executeUpdate();
 
 
@@ -117,7 +117,7 @@ public class BlogDao
     {
         Connection connection =null;
         PreparedStatement preparedStatement=null;
-        String sql="delete * from blog where blogId= ?";
+        String sql="delete from blog where blogId=?";
         ResultSet resultSet=null;
         try
         {

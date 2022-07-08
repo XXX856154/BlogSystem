@@ -13,15 +13,14 @@ public class UserDao
     public static void insert(User user)
     {
         Connection connection=null;
-        String sql="insert into user values(?,?,?)";
+        String sql="insert into user values(null,?,?)";
         PreparedStatement preparedStatement=null;
         try
         {
             connection=DBUtils.getConnect();
             preparedStatement=connection.prepareStatement(sql);
-            preparedStatement.setInt(1,user.getUserId());
-            preparedStatement.setString(2,user.getUserName());
-            preparedStatement.setString(3,user.getPassword());
+            preparedStatement.setString(1,user.getUserName());
+            preparedStatement.setString(2,user.getPassword());
             preparedStatement.executeUpdate();
 
         }

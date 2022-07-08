@@ -25,23 +25,23 @@
     
 }
 
-.dialog .buttonContainer{
+.dialog .buttonContainer,.registerContainer{
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
-.dialog #button{
+.dialog #button,.register{
     
     background-color: green;
     border-radius: 10px;
     width:100px;
-    height: 50px;
+    height: 25px;
     border:none;
     
-    
 }
-.dialog #button:hover{
-    background-color: red;
+.dialog #button:hover,.register:hover{
+    background-color: rgb(89, 0, 255);
     transition:all 0.5s;
 }
 .dialog span{
